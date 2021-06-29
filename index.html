@@ -101,13 +101,26 @@
     
         <script src="" async defer lang="text/javascript">
 
-                const changeText = function() {
-        let elementH1 = document.getElementsByTagName('h1')[0]
-           
+// First function
+const changeText = function() {
+    let elementH1 = document.getElementsByTagName('h1')[0]
      elementH1.innerText = "Welcome to the best shop for full color"
                 }
         
-                
+// Second function
+    
+const changeBackgroundColor = function() {
+    let newBackGroundColor = document.getElementsByTagName('body')[0]
+    newBackGroundColor.style.color = 'pink'
+}
+
+// Third function 
+const changeFooter = function() {
+    let fakeFooter = document.getElementsByTagName('footer')
+    fakeFooter.innerText = '"Harry Potter shop" adress: Hogwarts castle'
+}
+
+
         </script>
     </body>
 </html>
