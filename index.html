@@ -14,6 +14,7 @@
     </head>
     <body>
        <h1>Penny's Shop</h1>
+       <button onclick="changeText()">Click to change text.</button>
        
      
 <style>
@@ -95,8 +96,9 @@
     
       </tbody>
     </table>
-    <footer>"Penny's Shop" adress: Street 123, Riga, Latvia.</footer>
     <textarea name="comment" form="usrform">Enter text here...</textarea>
+    <footer>"Penny's Shop" adress: Street 123, Riga, Latvia.</footer>
+    
     
     
         <script src="" async defer lang="text/javascript">
@@ -119,7 +121,12 @@ const changeFooter = function() {
     let fakeFooter = document.getElementsByTagName('footer')
     fakeFooter.innerText = '"Harry Potter shop" adress: Hogwarts castle'
 }
-
+//Fourth function
+const giveClassAmazon = function() {
+    let giveClassName = document.getElementsByTagName('tr td')[1,2,3,4];[4]
+    giveClassName.className = 'amazon-links' 
+}
+ 
 
         </script>
     </body>
