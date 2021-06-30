@@ -12,9 +12,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
-    <body>
-       <h1>Penny's Shop</h1>
+    <body>  
        <button onclick="changeText()">Click to change text.</button>
+       <button onclick="changeBackgroundColor()">Click to change background</button>
+       <button onclick="changeFooter()">Click to change footer  to fake adress</button>
+       <h1>Penny's Shop</h1>
+    
        
      
 <style>
@@ -101,7 +104,7 @@
     
     
     
-        <script src="" async defer lang="text/javascript">
+        <script lang="text/javascript">
 
 // First function
 const changeText = function() {
@@ -113,18 +116,18 @@ const changeText = function() {
     
 const changeBackgroundColor = function() {
     let newBackGroundColor = document.getElementsByTagName('body')[0]
-    newBackGroundColor.style.color = 'pink'
+    newBackGroundColor.style.background = 'pink'
 }
 
 // Third function 
 const changeFooter = function() {
-    let fakeFooter = document.getElementsByTagName('footer')
+    let fakeFooter = document.getElementsByTagName('footer')[0]
     fakeFooter.innerText = '"Harry Potter shop" adress: Hogwarts castle'
 }
 //Fourth function
 const giveClassAmazon = function() {
-    let giveClassName = document.getElementsByTagName('tr td')[1,2,3,4];[4]
-    giveClassName.className = 'amazon-links' 
+    let giveClassName = document.getElementsByTagName('')
+    giveClassName.classList.add('amazon-links')
 }
  
 
